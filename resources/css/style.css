@@ -76,6 +76,11 @@ header img
   font-weight: bold;
 }
 
+span.tablet
+{
+  display: none;
+}
+
 .menu
 {
   background-color: firebrick;
@@ -128,12 +133,19 @@ header img
 }
 
 .pen img,
-.watch img,
-.glasses img
+.watch img
 {
   max-height: 9rem;
   width: 9rem;
   margin: 2rem 0;
+  text-align: center;
+}
+
+.glasses img
+{
+  margin: auto 0;
+  max-height: 9rem;
+  width: 9rem;
   text-align: center;
 }
 
@@ -192,4 +204,31 @@ footer
   display: flex;
   margin: 0 auto;
   align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .glasses
+  {
+    display: none;
+  }
+
+  .pen,
+  .watch
+  {
+    width: 47%;
+  }
+
+  span.desktop
+  {
+    display: none;
+  }
+
+  span.tablet
+  {
+    display: flex;
+    justify-content: center;
+    width: 960px;
+
+  }
+
 }
