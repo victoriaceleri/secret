@@ -206,7 +206,7 @@ footer
   align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-device-width: 1200px) {
   .glasses
   {
     display: none;
@@ -228,7 +228,73 @@ footer
     display: flex;
     justify-content: center;
     width: 960px;
+  }
 
+}
+
+@media only screen and (max-device-width: 470px) {
+  .headline
+  {
+    padding: 1rem 2rem;
+    width: 100%;
+    margin-top: 10rem;
+  }
+
+  .headline span
+  {
+    font-size: 0.77rem;
+  }
+
+  .headline h1
+  {
+    font-size: 1rem;
+  }
+
+  .highlights
+  {
+    max-height: 15rem;
+    background-position:center;
+    background-size: cover;
+  }
+
+  .products
+  {
+    justify-content: center;
+  }
+
+  .watch
+  {
+    display: none;
+  }
+
+  .pen
+  {
+    width: 90%;
+  }
+
+  .infos
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .locations,
+  .hours
+  {
+    width: 90%;
+    flex-wrap: nowrap;
+  }
+
+  .locations
+  {
+    margin-bottom: 0.5rem;
+    max-height: 80px;
+  }
+
+  footer
+  {
+    justify-content: center;
   }
 
 }
